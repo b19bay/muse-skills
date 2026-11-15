@@ -1,0 +1,5 @@
+name: "token-integration-analyzer"
+title: "Token Integration Analyzer"
+description: "Analyze token implementations and integrations for ERC20/ERC721 conformity and 20+ weird token patterns (Trail of Bits): fee-on-transfer, rebase, blocklists, missing return values, non-standard permits. Use when integrating arbitrary tokens or auditing a token implementation."
+category: "Work and knowledge"
+include_in_prompt: true

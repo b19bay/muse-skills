@@ -1,0 +1,5 @@
+name: "skill-security-audit"
+title: "Skill Security Audit"
+description: "Audit a skill for security risks before installing it (SafeClaw): prompt injection, malicious code, exfiltration, suspicious dependencies and network access, with a 0-100 risk score and INSTALL / CAUTION / DO NOT INSTALL recommendation. Use ALWAYS before installing any new skill."
+category: "Work and knowledge"
+include_in_prompt: true

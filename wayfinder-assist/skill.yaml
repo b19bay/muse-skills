@@ -1,0 +1,5 @@
+name: "wayfinder-assist"
+title: "Pembagian Kerja Wayfinder"
+description: "Division of labor with the Wayfinder API: pull Alpha Lab scan data (top APY, delta-neutral, Polymarket, DefiLlama, X posts) and wallet info read-only, filter by freshness, and summarize for the user."
+category: "Research"
+include_in_prompt: true

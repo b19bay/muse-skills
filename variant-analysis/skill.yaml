@@ -1,0 +1,5 @@
+name: "variant-analysis"
+title: "Variant Analysis"
+description: "Hunt for the other instances of a bug already found (Trail of Bits): extract the root cause, generalize it into CodeQL/Semgrep queries, and triage look-alike candidates. Use right after a vulnerability turns up and the question is where else it occurs."
+category: "Work and knowledge"
+include_in_prompt: true

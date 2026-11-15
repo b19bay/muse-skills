@@ -1,0 +1,5 @@
+name: "supply-chain-risk-auditor"
+title: "Supply Chain Risk Auditor"
+description: "Audit a project's dependencies for supply-chain risk (Trail of Bits): version-matched advisories for direct dependencies and the full lockfile tree, abandoned upstreams, npm publisher concentration, and install-time scripts. Use when auditing dependencies or assessing third-party package risk."
+category: "Work and knowledge"
+include_in_prompt: true

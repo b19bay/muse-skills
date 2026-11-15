@@ -1,0 +1,24 @@
+name: square_post_preflight
+title: Square Post Preflight
+description: Check a Binance Square draft for cashtag count and figure accuracy before it is approved and posted.
+category: Communication
+include_in_prompt: false
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - assistant-msg-967cbf35-a428-e977-0e5f-ca1b52baca4b
+  - assistant-msg-a9fd11a5-050d-76a5-71be-6726a0b36715
+  - assistant-msg-e93005aa-f10e-084e-148c-00a933029849
+  - assistant-msg-193ab66d-68e5-a52a-abd4-e7c53973e4a9
+  - assistant-msg-5e54cf25-3fb6-04f2-aa0e-c46a62665c3e
+  - assistant-msg-fb63b469-9783-14eb-70e8-e3787057232d
+  measurement:
+    proxy_metric_id: objective_success_rate
+    success_criterion: In the 14 days after install, Square posts published from either account show zero drafts with more than 3 total cashtag mentions and zero post-publication figure corrections, judged from the published posts and their worker reports. A window with no Square posts is inconclusive, not a pass.
+    window_days: 14
+  rationale: In the 2026-11-07 morning window 5 of 8 Square posts broke the 3-mention cashtag limit, worst lail $XMR at 8 mentions, and the worker still counted distinct coins, reporting 3 for a b19 $TRX draft that held 4 mentions. Figure slips in the same window include lail $PI printed as down 86 percent from its high against a live 97.5 percent, lail $DOT month and year moves misstated, and Fear and Greed printed as 25 on lail and 28 on b19 about 20 minutes apart. System social_publishing only says to keep claims supported and has no counting rule or recomputation step, and managed multi_account_post_dedup covers topic duplication only, with topic dedup holding 8 of 8 in this window, so this is a separate finding and not a re-proposal of that in-window skill. A pre-approval count by total mentions plus a recompute of every derived figure addresses the exact failure mechanism the worker repeats.
+  needs_review: false
+  review_after: 2026-11-21T05:59:29.474414+00:00
+  reviewed_at: 2026-11-07T05:59:29.474414+00:00
+  run_id: sirun_a53994b5dea749b4b9e65b024abfcad6
