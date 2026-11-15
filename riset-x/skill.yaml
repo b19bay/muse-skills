@@ -1,0 +1,5 @@
+name: "riset-x"
+title: "Riset Proyek X"
+description: "Research agent and free NFT projects found on X, then filter each project for active status, named KOL support, real collection price, non-spam signals, and free mint price, verified or marked unverified."
+category: "Shopping"
+include_in_prompt: true

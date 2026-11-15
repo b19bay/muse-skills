@@ -1,0 +1,5 @@
+name: "recon-a-domain-passively"
+title: "Recon a Domain Passively"
+description: "End-to-end passive reconnaissance for a domain, website or IP (UseOSINT): build an asset inventory covering registration, DNS, subdomains, infrastructure, tech stack, history and ownership without sending a single packet to the target. Invoke explicitly."
+category: "Work and knowledge"
+include_in_prompt: true

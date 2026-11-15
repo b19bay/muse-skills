@@ -1,0 +1,22 @@
+name: scheduled_delivery_proof
+title: Verify Scheduled Delivery Before Claiming It
+description: Verify that a scheduled watcher alert reached the user as a visible chat message before marking it delivered.
+category: Work and knowledge
+include_in_prompt: false
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - 'file:~/AGENTS.md (delivery proof lesson: token-moon run 02:28 2026-11-06, thin alert recorded as sent in state and log with no message in the transcript)'
+  - previous_step_handoff:chunk2:PRINT-thin-13-e1e706f6 (worker claimed the alert was already sent, transcript check found no message, main agent sent it then)
+  - assistant-msg-e1e706f6
+  - scheduler_job:token-moon-watcher
+  measurement:
+    proxy_metric_id: objective_success_rate
+    success_criterion: In post-install scheduled watcher runs, every delivery claim is verified against the visible chat transcript before state is marked delivered, and no alert is recorded as delivered from state or log writes alone. A window with no scheduled delivery claims is inconclusive, not a pass.
+    window_days: 30
+  needs_review: false
+  rationale: 'Two grounded instances of the same failure shape. AGENTS.md codifies the token-moon lesson from run 02:28 on 2026-11-06: a thin alert was recorded as sent in state.json and the daily log while no message existed in the transcript. The chunk 2 handoff shows the same shape again in this window for PRINT thin alert 13 (handle e1e706f6): the worker claimed the alert was already sent, a transcript check found no message, and the main agent had to send it. State and daily log writes are exactly the memory objective artifacts named in that lesson, which is why this proposal is filed under objective memory. Skill search for transcript verification of scheduled delivery returned no covering skill. The closest managed skill, contested_seat_watcher, covers when to notify and keeping no-change checks out of the main conversation, but it has no transcript verification step for a claimed delivery, and it is still inside its measurement window until 2026-11-28 so it is left untouched. The general evidence principle in perkataan_mutlak states that inference is not fact, but it gives no scheduled worker transcript steps. The deterministic memory candidate (10 recurring failures, 39 suppressed handoffs) was rejected as the basis for this finding because the packet carries only the rollup count for those runs with no per-run failure detail and the subagent transcript section is empty, the same basis on which earlier managed proposals rejected memory rollups. Other candidate shapes in the packet were also rejected for this batch to keep attribution clean: the repeated obscura-guard output token cap failures in the cron runs carry no skill-addressable detail beyond the bounded per-run limits already recorded in memory; the alerted.json five-format parser is a single-file parser contract already codified in AGENTS.md rather than a distinct reusable method; factory-gate worker misstatements corrected on-chain in chunk 2 already have a house method in the multichain audit skill and read as execution slips rather than a missing instruction; and the Square duplication and figure failures belong to the managed multi_account_post_dedup and square_post_preflight skills, both still inside their measurement windows and left untouched. This single new skill addresses only the transcript verification gap for scheduled delivery claims.'
+  review_after: 2026-12-14T05:30:30.195689+00:00
+  reviewed_at: 2026-11-14T05:30:30.195689+00:00
+  run_id: sirun_ed28a36c875448ad86d31afb2211f425

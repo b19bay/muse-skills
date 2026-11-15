@@ -1,0 +1,5 @@
+name: "serok"
+title: "Serok"
+description: "Find NFTs listed far below their collection floor, verify the listing, and present only verified mispriced results."
+category: "Shopping"
+include_in_prompt: true

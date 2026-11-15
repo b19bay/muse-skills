@@ -1,0 +1,5 @@
+name: "property-based-testing"
+title: "Property-Based Testing"
+description: "Write, review, and debug property-based tests (Trail of Bits) — Hypothesis, fast-check, proptest, jqwik, and Echidna/Medusa for Solidity invariants. Use when tests should cover a whole input domain instead of hand-picked examples."
+category: "Work and knowledge"
+include_in_prompt: true

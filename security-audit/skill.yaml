@@ -1,0 +1,5 @@
+name: "security-audit"
+title: "Security Audit"
+description: "Security guidance and vulnerability review for codebases, APIs, services, CLI tools, libraries, and daemons — 6-phase audit orchestration with a coverage ledger, hunting waves, and structured findings. From Cloudflare (MIT)."
+category: "Work and knowledge"
+include_in_prompt: true
