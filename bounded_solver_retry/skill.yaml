@@ -1,0 +1,28 @@
+name: bounded_solver_retry
+title: Bounded Solver Retry
+description: Gate time-boxed solver attempts on a measured fit with the live window, cap identical retries, and escalate before rescheduling.
+category: Work and knowledge
+include_in_prompt: false
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - assistant-msg-0576a064-c176-26b6-666f-4143f9135826
+  - assistant-msg-6de27fd3-446f-4700-8b94-45c19bdde194
+  - assistant-msg-6853b39d-9e7a-cf3a-b800-d9ce57ff251f
+  - assistant-msg-8f03f472-f715-1767-6233-d968b3493904
+  - assistant-msg-ff4218a3-e83a-d1c2-774e-132d9feaf811
+  - assistant-msg-bdbbc663-678b-899e-bdfa-11922791a97e
+  - assistant-msg-99412932-c3a7-438f-1463-280563617cec
+  - scheduler_job:solvd-main-retry-0727
+  - scheduler_job:solvd-main-retry-0808
+  - scheduler_job:solvd-main-retry-0853
+  measurement:
+    proxy_metric_id: objective_success_rate
+    success_criterion: In post-install time-boxed solver runs, no identical method is auto-rescheduled after three consecutive same-mode failures without a feasibility benchmark and a user decision, and each scheduled retry records measured solver time against the live window.
+    window_days: 30
+  needs_review: false
+  rationale: 'The packet shows seven consecutive failures in the same mode: tier 6 single 112x112 boards at 05:40, 06:45, 07:27, 08:08, 08:53, 09:34 and 10:15 on 2026-10-30, each with CaDiCaL finding no solution by the deadline, 0/1 solved, no submit, no mint and no gas spent, while supply fell from 892 to 772 and the cooldown was corrected from about 15 minutes to about 30 minutes. The agent kept scheduling the next identical attempt and only at 10:15 asked whether to continue or stop, with no schedule then attached. No existing skill covers this gap: contested_seat_watcher covers classified retries and anti-hammering for seat capture, not solver time versus window, and nft-detail covers reporting detail, not a retry cap. The deterministic candidates were rejected for this proposal because the memory and goals_bookkeeping recurring failures and the shopping, memory and alignment handoff suppressions carry no solver failure detail that a skill could address. This single proposal is therefore the only change made, and it does not touch the unmanaged serok, nft-detail or riset-x files or the managed contested_seat_watcher skill still inside its measurement window.'
+  review_after: 2026-11-29T06:28:48.150173+00:00
+  reviewed_at: 2026-10-30T06:28:48.150173+00:00
+  run_id: sirun_e8e0ada5be8c4286838a4a151d39b4bb

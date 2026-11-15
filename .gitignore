@@ -1,0 +1,12 @@
+__pycache__/
+*.pyc
+*.pyo
+.write-lock
+*.log
+*.tmp
+*.bak
+.env
+*.env
+ledger.jsonl
+.muse-github-snapshot-sync.json
+.muse-github-snapshot-sync.json.tmp-*
