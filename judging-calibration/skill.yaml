@@ -1,0 +1,5 @@
+name: "judging-calibration"
+title: "Judging Calibration for make.fun"
+description: "Calibrate judge-scored make.fun bounty entries with the P-33 loop: study the top 10, build 2 to 3 variants, read dev judge scores, and keep the best via the final-entry pick."
+category: "Work and knowledge"
+include_in_prompt: true

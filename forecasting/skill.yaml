@@ -1,0 +1,5 @@
+name: "forecasting"
+title: "Forecasting for make.fun Bounties"
+description: "Win make.fun forecasting bounties with the proven NVIDIA champion method, a replica scorer, a noise-band variant sweep, out-of-sample validation, and the untried model classes from our own research."
+category: "Work and knowledge"
+include_in_prompt: true

@@ -1,0 +1,5 @@
+name: "perf-profiling"
+title: "Performance Profiling for Agent-Server Entries"
+description: "Make make.fun agent-server bounty builds win on performance: attribute the score gap arithmetically, profile with throttle-proof CPU-time A/B comparisons, apply the proven Adler-scan, depth-bounded fetch, and full-stack caching techniques, and know when to stop. Use when an agent-server entry loses on speed."
+category: "Work and knowledge"
+include_in_prompt: true

@@ -1,0 +1,5 @@
+name: "hunt-llm-ai"
+title: "Hunt LLM/AI Vulnerabilities"
+description: "Hunt LLM and Agentic AI vulnerabilities — prompt injection, ASCII smuggling exfil, agentic tool-use abuse, system prompt leakage, vector DB cross-tenant, model server RCE — anchored to public CVEs and disclosures. Bound to the pentest-web 3-tier authorization gate."
+category: "Work and knowledge"
+include_in_prompt: true

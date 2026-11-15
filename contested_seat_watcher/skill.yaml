@@ -1,0 +1,23 @@
+name: contested_seat_watcher
+title: Contested Seat Watcher
+description: Run an unattended watcher that captures a scarce seat or attempt and acts inside its window without silently stopping, hammering a blocked endpoint, or starting an attempt it cannot finish.
+category: Personal planning
+include_in_prompt: false
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - scheduler_job:boltbook-seat-watcher
+  - scheduler_job:boltbook-seat-watcher-akun2
+  - scheduler_job:baw-session-keeper
+  - a25d3229-b828-45bc-8517-5d8bdd018d49
+  - 14d68e8a-b942-4578-8187-fa05a9670e19
+  measurement:
+    proxy_metric_id: objective_success_rate
+    success_criterion: In post-install contested watcher runs, a pre-flight proof is recorded before unattended watching starts, failures are classified rather than hammered, and no seat is lost a second time to a 403 endpoint block after cadence escalation or to a session that expired or was displaced during the window.
+    window_days: 30
+  needs_review: false
+  rationale: 'The packet shows the same decisive-moment pattern across two windows. An earlier unattended monitor stopped silently and its token expired, and later the seat watchers repeatedly saw a free seat but could not seize it: timeouts and server errors, then a persistent endpoint block while other endpoints still succeeded, with cadence escalated from 15 to 5 to 1 minute. A browser pairing then displaced the CLI session the watcher needed, and a first win had already expired while waiting for confirmation. The existing read-only watcher guidance in nft-detail does not cover an acting watcher that must capture a seat and execute inside a short window, and no system skill found by search covers classified retries, anti-hammering, session displacement, or pre-flight proof for such a watcher. The deterministic memory candidates (1 recurring failure, 13 suppressed handoffs) were rejected for this proposal because they carry no failure detail that a skill could address. This single new skill addresses the watcher failure class only, without touching the unmanaged serok, nft-detail, or riset-x files, whose learning metadata is null rather than managed.'
+  review_after: 2026-11-28T12:38:37.738252+00:00
+  reviewed_at: 2026-10-29T12:38:37.738252+00:00
+  run_id: sirun_fdbe2c4638f04a86ba877f63bf009b70

@@ -1,0 +1,5 @@
+name: "makefun-bounty"
+title: "make.fun Bounty Builder"
+description: "Build a make.fun bounty entry from kit to submission-ready bundle with the fresh-write protocol, local grading, and transcript checks."
+category: "Work and knowledge"
+include_in_prompt: true

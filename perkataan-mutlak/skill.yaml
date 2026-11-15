@@ -1,0 +1,5 @@
+name: "perkataan-mutlak"
+title: "Perkataan Mutlak"
+description: "Doktrin kerja tertinggi dari user: perkataan user adalah aturan di atas semua aturan; akurasi berbasis bukti (inferensi bukan fakta, simulasi bukan hasil); playbook kreatif menghadapi kegagalan mint/eksekusi dan claim ulang — bedah kontrak dan kode resmi dulu, petakan semua jalur, jangan pernah menyimpulkan dari tebakan. Pakai skill ini di SETIAP tugas, terutama saat eksekusi gagal, claim/mint tertolak, atau ada aturan yang bertabrakan."
+category: "Operations"
+include_in_prompt: true

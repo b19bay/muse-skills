@@ -1,0 +1,5 @@
+name: "nft-detail"
+title: "Detail NFT"
+description: "Show a complete NFT detail: token metadata, which marketplaces sell it, collection floor, volume, last sale, and active buy offers, verified or marked unverified, plus a real-time watcher for floor, listing, and offer changes."
+category: "Shopping"
+include_in_prompt: true

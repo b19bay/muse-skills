@@ -1,0 +1,21 @@
+name: multi_account_post_dedup
+title: Multi-Account Posting Deduplication
+description: Prevent the same topic from being posted twice across accounts the user owns by checking sibling accounts before every post.
+category: Communication
+include_in_prompt: false
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - assistant-msg-e1cb9a11
+  - e3077755-a463-4eeb-8cb1-b34fe38701a6
+  - fbdca864-1934-4dfe-b8c8-fd874a1d8332
+  measurement:
+    proxy_metric_id: objective_success_rate
+    success_criterion: In the 14 days after install, multi-account posting runs record a sibling-account check for every post and produce zero same-day same-topic posts across sibling accounts. A window with no multi-account posting runs is inconclusive, not a pass.
+    window_days: 14
+  needs_review: false
+  rationale: 'The evidence shows an asymmetric, still-open gap: the lail routine checks against the last 2 b19 posts, while the b19 routine has no reciprocal check against lail. That asymmetry produced 16 cross-account duplicates through 2026-11-04, the latest being b19 posting $PONS at 10:24 WIB about 13 minutes after lail posted $PONS at 10:11 WIB (assistant-msg-e1cb9a11), while both routines kept succeeding in chunk 4. No existing skill covers this: social_publishing tracks each destination separately for failure recovery, not same-topic duplication across distinct accounts, and the Binance Square connector docs are publish-only and cannot read sibling posts, so the skill prescribes a shared post log plus a pre-post sibling check instead of a read API. It does not rewrite approved text, so it preserves the exact-text posting rule. The two managed skills in the inventory (bounded_solver_retry, contested_seat_watcher) are still inside their measurement windows and are untouched, and with only 2 learned skills the consolidation threshold is not met.'
+  review_after: 2026-11-18T05:40:45.485641+00:00
+  reviewed_at: 2026-11-04T05:40:45.485641+00:00
+  run_id: sirun_16f2315fb8824a24b63104f37b1e7bef
