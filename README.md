@@ -1,6 +1,6 @@
 # muse-skills
 
-A collection of 35 agent skills built for security research, forensic
+A collection of 36 agent skills built for security research, forensic
 auditing, bug-bounty hunting, and autonomous agent work — written in
 Indonesian and English, used daily by a working security researcher.
 
@@ -24,6 +24,7 @@ and follow its `SKILL.md`.
 | `judging-calibration` | Calibrate judge-scored entries: study top 10, build variants, keep the best |
 | `launch-curve-audit` | Launch Curve Audit |
 | `makefun-bounty` | Build a make.fun bounty entry from kit to submission-ready bundle |
+| `makefun_recorder_choreography` | Record make.fun builds correctly: recorder first, author after, one seal at a time |
 | `multi_account_post_dedup` | Stop the same topic being posted twice across accounts you own |
 | `multichain-contract-audit` | Multichain contract & NFT mint audit (EVM + Solana annex) |
 | `nft-detail` | Complete NFT detail: metadata, marketplaces, floor, volume, offers |

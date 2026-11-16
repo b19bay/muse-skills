@@ -1,0 +1,22 @@
+name: makefun_recorder_choreography
+title: Make.fun Recorder Choreography
+description: Record make.fun strict transcripts without seal poisoning, cron turn death, or the eight recording cap blocking a build.
+category: Work and knowledge
+include_in_prompt: false
+skill_improvement:
+  managed: true
+  status: active
+  evidence_handles:
+  - file:~/AGENTS.md
+  - previous_step_handoff:chunk1-2:recorder-failures-17f12894-69e10934-99828830-5f48e5bb-9467eebf
+  - previous_step_handoff:chunk3:eight-cap-57c95aba-freed-bbb57e61-reboot-b10e11c5-clean-8ef3e980
+  - file:~/workspace/custom-skills/makefun-bounty/SKILL.md
+  measurement:
+    proxy_metric_id: objective_success_rate
+    success_criterion: In post-install make.fun recording runs, each seal is confirmed by a receipt in recordings.json before bundle, with no seal poisoned by a parent session collision, no recorder lost to a cron turn end, and no new recording blocked by the eight open cap without first finishing a certainly unused dead recording. A window with no recording runs is inconclusive, not a pass.
+    window_days: 30
+  needs_review: false
+  rationale: 'Repeated recorder failures with the same shapes across the window: cron launched recorder death at turn end, seal poisoning by parent collision, parallel build contamination, cron author turn budget, and the eight open cap blocking new recorders. The makefun bounty skill was read and verified to cover the fresh write protocol and bundle grep but no recorder launch or seal choreography, and skill search found no covering skill. The lessons sit in AGENTS.md as text, and the P-13 episode in this same window showed text alone repeats as failure until installed in the path that does the work, so this single new managed skill installs the choreography in a discoverable skill without touching the unmanaged makefun bounty file. Q-Day rate limit and cron timeouts map to the managed contested seat watcher still inside its measurement window. The devnet negative control episode, the saved login claim error, the alerted.json parser formats, and the LICENSE SPDX correction were each rejected as single or already codified shapes to keep attribution clean.'
+  review_after: 2026-12-16T05:36:03.523419+00:00
+  reviewed_at: 2026-11-16T05:36:03.523419+00:00
+  run_id: sirun_a75ce0dafb3347df9301738759d31152

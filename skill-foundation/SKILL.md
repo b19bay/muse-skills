@@ -22,6 +22,14 @@ prosedur wajib yang bisa diaudit.
 - Bank pola diperlakukan sama seperti skill: bila ada bank pola untuk jenis
   tugas itu (mis. pattern-bank make.fun), baca dan pakai sebelum mulai, dan
   perbarui setelah selesai.
+- DOKTRIN KESEMPURNAAN (user 2026-11-16): pakai SEMUA skill dan pengalaman
+  yang ada; bila dirasa kurang, ambil pengalaman dari luar, ambil skill yang
+  belum dimiliki, ambil metode yang lebih baik — jangan bekerja dengan
+  peralatan yang diketahui kurang memadai. Sempurnakan tiap pekerjaan menjadi
+  sesuatu yang absolut: jangan lupakan satu langkah pun, step by step,
+  termasuk hal-hal pendukung yang dibutuhkan. Lihat dari berbagai arah, pikir
+  dari berbagai sudut, berpikir dua arah dengan pemahaman terbuka tanpa
+  batasan. Berlaku untuk SEMUA pekerjaan, bukan hanya yang substansial.
 
 ## Routing wajib pra-kerja
 
