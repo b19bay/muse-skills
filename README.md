@@ -1,6 +1,6 @@
 # muse-skills
 
-A collection of 36 agent skills built for security research, forensic
+A collection of 39 agent skills built for security research, forensic
 auditing, bug-bounty hunting, and autonomous agent work — written in
 Indonesian and English, used daily by a working security researcher.
 
@@ -13,6 +13,7 @@ and follow its `SKILL.md`.
 | Skill | What it does |
 |---|---|
 | `audit-pasar-agen` | Audit agent marketplaces: trust flows author → victim, not just client → server |
+| `binance-square-post` | Publish text/image/video posts to Binance Square via the official Square OpenAPI (official Binance skill, verbatim + local vault-auth amendment) |
 | `bounded_solver_retry` | Gate time-boxed solver attempts on a measured fit with the live window |
 | `bsc-contract-audit` | BSC contract & NFT mint audit: 4 gates, /100 rubric, GO/CAUTION/BLOCK |
 | `bug-hunter` | Bug Hunter — recon to report (from awarexone/Agentic-Bug-Hunter, adapted) |
@@ -21,6 +22,7 @@ and follow its `SKILL.md`.
 | `forensik-kontrak` | Forensik Kontrak v2 — hunt from patterns, not function lists |
 | `forensik-node` | Forensik Node — hunt from duplicate maps & cross-subsystem imbalance |
 | `hunt-llm-ai` | Hunt LLM & agentic AI vulnerabilities (prompt injection, tool-use abuse, RCE) |
+| `humanize-skills` | Rewrite, edit, or draft text so it reads as specifically human-written (CC-BY-4.0, Adem Kurtipek; 10 modes, 20 languages) |
 | `judging-calibration` | Calibrate judge-scored entries: study top 10, build variants, keep the best |
 | `launch-curve-audit` | Launch Curve Audit |
 | `makefun-bounty` | Build a make.fun bounty entry from kit to submission-ready bundle |
@@ -42,6 +44,7 @@ and follow its `SKILL.md`.
 | `serok` | Find NFTs listed far below their collection floor, verified only |
 | `skill-foundation` | Doctrine: skills are the foundation of every substantial task |
 | `skill-security-audit` | Audit a skill for security risks before installing it (SafeClaw) |
+| `simular-box-browsing` | Cloud-Linux-desktop browsing fallback when Cloudflare or an IP block stops the normal route |
 | `square_post_preflight` | Preflight checks for social posts: count cashtags by mentions, recompute figures |
 | `supply-chain-risk-auditor` | Audit dependencies for supply-chain risk (Trail of Bits) |
 | `token-integration-analyzer` | Token integration analysis: ERC20/ERC721 conformity + weird-token patterns |
@@ -64,7 +67,7 @@ and follow its `SKILL.md`.
 Most skills here are original work, shared as-is. A few are adapted from
 upstream projects and keep their own `LICENSE` files — check the license
 inside each skill directory before reuse (notably `bug-hunter` and the
-Trail of Bits / Cloudflare-origin security skills).
+Trail of Bits / Cloudflare-origin security skills). `humanize-skills` is CC-BY-4.0 (declared in its `SKILL.md` frontmatter); `binance-square-post` is Binance's official skill, included verbatim with a local amendment.
 
 ## No personal data
 
