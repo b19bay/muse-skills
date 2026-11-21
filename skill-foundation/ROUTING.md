@@ -8,6 +8,7 @@ Jangan menambahkan nama skill tanpa memverifikasi foldernya dulu.
 Berlaku di SEMUA baris (tidak ditulis ulang per baris):
 - `perkataan-mutlak` — doktrin tertinggi; akurasi berbasis bukti.
 - `skill-foundation` — doktrin ini; mengatur routing, bundle, ledger.
+- `humanize-skills` — overlay gaya tulis (standing order user 2026-11-21, "terapkan selalu"): berlaku di semua output tertulis (chat panjang, laporan, draf, lamaran, posting); baca core-rules + structural-pass + file bahasa yang dipakai; no-edit gate + fact-lock; tidak mengalahkan format wajib, sitasi, atau akurasi faktual.
 - Bila ada bank pola untuk jenis tugas itu (mis. `~/workspace/makefun/pattern-bank.md`),
   baca sebelum mulai dan perbarui setelah selesai.
 
@@ -56,10 +57,11 @@ melihat masalah), **V** = validasi (memeriksa hasil), **P** = pengganda
 
 | Jenis tugas | Bundle (urut peran) | Kapan | Pendamping opsional |
 |---|---|---|---|
-| Posting Binance Square | `square_post_preflight` (V, cek draf) + `multi_account_post_dedup` (V, dedupe lintas akun) + `scheduled_delivery_proof` (V, bukti terkirim) | Sebelum dan sesudah posting Square di akun mana pun | `social-publishing` (sistem, bila menjadwalkan/menerbitkan) |
+| Posting Binance Square | `binance-square-post` (O, publish: teks via client.py, media via post-media.py; baca LOCAL-AMENDMENT.md untuk auth vault 2 akun; rutinitas 2 jam sekali, 12/hari/akun, media buatan sendiri: gambar KOIN, video ffmpeg TREN) + `humanize-skills` (O, overlay gaya teks postingan, mode social + en) + `square_post_preflight` (V, cek draf) + `multi_account_post_dedup` (V, dedupe lintas akun) + `scheduled_delivery_proof` (V, bukti terkirim) | Sebelum dan sesudah posting Square di akun mana pun | `social-publishing` (sistem, bila menjadwalkan/menerbitkan) |
 | Pencarian + lamaran kerja remote | `wide-research` (O, riset luas — sistem) + `documents` (V, CV/dokumen — sistem) + `email-management` (sistem, bila via email) + `scheduling` (sistem, bila ada interview) | Cari lowongan, verifikasi masih buka, kirim lamaran | `knowledge-organization` (sistem, merapikan catatan lamaran) |
 | Riset web luas | `wide-research` (O — sistem) | Riset paralel atas banyak input independen dengan skema output bersama | `documents` (sistem, bila output dokumen) |
 | Dokumen / laporan | `documents` (O+V — sistem) | Baca, tulis, revisi dokumen/PDF/spreadsheet/presentasi | `knowledge-organization` (sistem) |
+| Penulisan & penyuntingan teks | `humanize-skills` (O+V, surface + structural pass; mode + bahasa dari request) | Menulis draf baru, mengedit/meng-humanize teks, surat lamaran, laporan, posting | `documents` (sistem, bila output dokumen) |
 | Penjadwalan | `scheduling` (O — sistem) | Cari waktu, buat undangan, kelola janji temu | `goals` (sistem, bila terkait goal) |
 | Produksi video & gambar | `video-gambar` (O+V) | Membuat video dan gambar: iklan 15 detik, explainer, animasi kode, motion graphics | `image-search` (sistem, referensi visual) |
 
